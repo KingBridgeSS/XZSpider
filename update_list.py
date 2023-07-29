@@ -43,7 +43,7 @@ def make_diff_url_list():
     with open('./list.json', 'r') as f:
         new_url_list = json.load(f)["url_list"]
     diff_url_list = {'url_list':list(set(new_url_list) - set(previous_url_list))}
-    logger.info(f"Updated {str(len(diff_url_list))} URLs.")
+    logger.info(f"Updated {str(len(diff_url_list['url_list']))} URLs.")
     with open('./diff_list.json', 'w') as f:
         json.dump(diff_url_list, f, indent=4)
     logger.success(f"Diff list saved to diff_list.json.")
