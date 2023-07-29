@@ -1,3 +1,6 @@
+import os.path
+import sys
+
 import requests
 from bs4 import BeautifulSoup
 from loguru import logger
