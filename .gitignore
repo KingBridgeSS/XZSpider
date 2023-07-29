@@ -1,0 +1,7 @@
+.idea/
+__pycache__/
+
+diff_list.json
+previous_list.json
+list.json
+
