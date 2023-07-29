@@ -11,6 +11,7 @@
 `python3 update_list.py`
 
 运行后程序会把上次爬取的URL保存到previous_list.json，本次爬取的所有文章URL保存在list.json，并求差集保存到diff_list.json以供下载。
+
 3. 下载
 
 ```
