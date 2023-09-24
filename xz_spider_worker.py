@@ -38,10 +38,10 @@ class XzSpiderWorker:
             with open(img_filename, 'wb') as f:
                 f.write(img_data)
             self.markdown_content = self.markdown_content.replace(img_url, img_markdown_path)
-            markdown_filename = os.path.join(self.save_path, title + '.md')
-            # Save the Markdown content to a file
-            with open(markdown_filename, 'w', encoding='utf-8') as f:
-                f.write(self.markdown_content)
+        markdown_filename = os.path.join(self.save_path, title + '.md')
+        # Save the Markdown content to a file
+        with open(markdown_filename, 'w', encoding='utf-8') as f:
+            f.write(self.markdown_content)
 if __name__ == '__main__':
     spider= XzSpiderWorker('https://xz.aliyun.com/t/12691','aliyun')
     spider.work()
